@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\cuerpoEController;
+use App\Http\Controllers\servicioController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +18,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+route::get('servicio/create',[servicioController::class,'create']);
+route::post('servicio',[servicioController::class,'store'])->name('store');
+
+
+route::get('cuerpo/create',[cuerpoEController::class,'create']);
+route::post('cuerpo',[cuerpoEController::class,'store'])->name('store');
