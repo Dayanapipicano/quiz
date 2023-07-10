@@ -20,8 +20,8 @@ Route::get('/', function () {
 });
 
 route::get('servicio/create',[servicioController::class,'create']);
-route::post('servicio',[servicioController::class,'store'])->name('store');
+route::post('servicio',[servicioController::class,'store'])->name('store.servicio');
 
 
 route::get('cuerpo/create',[cuerpoEController::class,'create']);
-route::post('cuerpo',[cuerpoEController::class,'store'])->name('store');
+route::post('cuerpo',[cuerpoEController::class,'store'])->name('store.cuerpo');

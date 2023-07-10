@@ -4,7 +4,7 @@
 
 <h1>formulario de cuerpo</h1>
 
-<form action="{{route('store')}}" method="POST">
+<form action="{{route('store.cuerpo')}}" method="POST">
 
 @csrf
     <label>

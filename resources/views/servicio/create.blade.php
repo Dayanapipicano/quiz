@@ -4,7 +4,7 @@
 
 <h1>formulario de servicio</h1>
 
-<form action="{{route('store')}}" method="POST">
+<form action="{{route('store.servicio')}}" method="POST">
 
 @csrf
     <label>
